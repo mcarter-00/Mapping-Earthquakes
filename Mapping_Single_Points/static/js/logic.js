@@ -43,12 +43,12 @@ darkMap.addTo(map);
 var marker = L.marker(LosAngeles).addTo(map);
 
 //  Add a circle to the map for Los Angeles, California.
-var cicle = L.circle(LosAngeles, {
-  color: 'black',
-  fillColor: 'yellow',
-  fillOpacity: 0.5,
-  radius: 300,
-}).addTo(map);
+// var cicle = L.circle(LosAngeles, {
+//   color: 'black',
+//   fillColor: 'ffffa1',
+//   fillOpacity: 0.5,
+//   radius: 300,
+// }).addTo(map);
 
 // Alternatively, we can create a circle using the circleMarker() function.
 // The circleMarker() function measures the radius of the circle in pixels, with the default radius set at 10 pixels.
