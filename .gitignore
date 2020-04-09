@@ -1,2 +1,7 @@
 // Ignore my Mapbox API key
-simple_map/static/js/config.js
+**/config.js
+
+// Ignore JSON datasets
+majorAirports.json
+torontoNeighborhoods.json
+torontoRoutes.json
