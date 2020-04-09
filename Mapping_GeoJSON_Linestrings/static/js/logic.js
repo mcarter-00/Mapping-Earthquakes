@@ -26,10 +26,34 @@ let darkMap = L.tileLayer(
   }
 );
 
+// Create day navigation map layer.
+let dayMap = L.tileLayer(
+  'https://api.mapbox.com/styles/v1/mapbox/navigation-preview-day-v4/tiles/{z}/{x}/{y}?access_token={accessToken}',
+  {
+    attribution:
+      'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    accessToken: apiKey,
+  }
+);
+
+// Create night navigation map layer.
+let nightMap = L.tileLayer(
+  'https://api.mapbox.com/styles/v1/mapbox/navigation-preview-night-v4/tiles/{z}/{x}/{y}?access_token={accessToken}',
+  {
+    attribution:
+      'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    accessToken: apiKey,
+  }
+);
+
 // Create a base layer that holds both map layers.
 let baseMaps = {
   Light: lightMap,
   Dark: darkMap,
+  'Day Navigation': dayMap,
+  'Night Navigation': nightMap,
 };
 
 // Create the map object with center, zoom level and default layer.
