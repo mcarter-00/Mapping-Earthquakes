@@ -1,7 +1,7 @@
-console.log('Is it working?!');
+console.log('Is Step 1 working?');
 
 /*
- * Add Earthquake Data to a Map
+ * Add Earthquake Data to a Map: STEP ONE
  */
 
 // Create a streets map layer.
@@ -42,11 +42,11 @@ let map = L.map('mapid', {
 // Pass our map layers into our layers control and add the layers control to the map.
 L.control.layers(baseMaps).addTo(map);
 
-// Retrieve the earthquake GeoJSON data.
-d3.json(
-  'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson'
-).then(function (data) {
-  console.log(data);
-  // Create a GeoJSON layer with the retrieved data
-  L.geoJson(data).addTo(map);
-});
+// // Retrieve the earthquake GeoJSON data.
+// d3.json(
+//   'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson'
+// ).then(function (data) {
+//   console.log(data);
+//   // Create a GeoJSON layer with the retrieved data
+//   L.geoJson(data).addTo(map);
+// });

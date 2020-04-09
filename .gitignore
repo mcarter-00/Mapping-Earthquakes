@@ -1,7 +1,7 @@
 // Ignore my Mapbox API key
 **/config.js
 
-// Ignore these larger JSON datasets
+// Ignore JSON datasets
 majorAirports.json
 torontoNeighborhoods.json
 torontoRoutes.json
