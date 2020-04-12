@@ -149,6 +149,7 @@ let line2 = [SFOairport, AUSairport, YYZairport, JFKairport];
 
 L.polyline(line2, {
   color: 'blue',
+  dashArray: '10,10',
   weight: 3,
   opacity: 0.5,
 }).addTo(map);
